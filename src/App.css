@@ -1,0 +1,33 @@
+main {
+  text-align: left;
+  vertical-align: center;
+  line-height: 100vh
+}
+
+/* button {
+  color: blue;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+} */
+
+.DottedBox {
+  margin: 40px;
+  border: 5px dotted pink;
+}
+
+.WidgetHeader {
+  color: rebeccapurple;
+  background-color: green;
+  text-align: center;
+}
+
+.CounterWidget {
+  display: flex;
+  justify-content: space-around;
+}
+
+.SingleLineLabel {
+  display: flex;
+  justify-content: space-evenly;
+}
