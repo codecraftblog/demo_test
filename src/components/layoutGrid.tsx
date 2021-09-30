@@ -10,7 +10,7 @@ return (
   <Segment placeholder>
     <Grid columns={3} >
       <Grid.Column width={3} />
-      <Grid.Column width={8}>
+      <Grid.Column width={10}>
         <FruitList />
       </Grid.Column>
       <Grid.Column />
