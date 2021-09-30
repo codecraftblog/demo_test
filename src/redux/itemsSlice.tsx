@@ -1,4 +1,3 @@
-// DUCKS pattern
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface ItemState {
@@ -6,7 +5,7 @@ interface ItemState {
 }
 
 const initialState: ItemState = {
-  value: 100,
+  value: 0,
 };
 
 const itemSlice = createSlice({
@@ -14,15 +13,11 @@ const itemSlice = createSlice({
   initialState,
   reducers: {
     incremented(state) {
-      // it's okay to do this because immer makes it immutable
-      // under the hood
       state.value++;
     },
     amountAdded(state, action: PayloadAction<number>) {
       state.value += action.payload;
     },
-    // decrement
-    // reset
   },
 });
 
