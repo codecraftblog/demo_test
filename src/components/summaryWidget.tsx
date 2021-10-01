@@ -7,7 +7,6 @@ import { Grid, Segment } from 'semantic-ui-react'
 export const SummaryWidget = () => {
 
 const count = useAppSelector((state) => state.cart.count);
-const total = useAppSelector((state) => state.cart.totalPrice);
 
 return (
   <Segment color="green">
@@ -16,7 +15,7 @@ return (
         <Grid.Column>
       <Grid columns={2} >
           <Grid.Column><h4>Count : { count } </h4></Grid.Column>
-          <Grid.Column><h4>Total : ₹ { total } </h4> </Grid.Column>
+          <Grid.Column><h4>Total : ₹ ?? </h4> </Grid.Column>
       </Grid>
               </Grid.Column>
         <Grid.Column width={3} />

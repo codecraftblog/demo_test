@@ -7,7 +7,6 @@ interface CartState {
 
 const initialState: CartState = {
   count: 0,
-  totalPrice: 0
 };
 
 const cartSlice = createSlice({
@@ -20,14 +19,8 @@ const cartSlice = createSlice({
     decremented(state) {
       state.count--;
     },
-    increaseTotal(state, action: PayloadAction<number>){
-      state.totalPrice += action.payload;
-    },
-    decreaseTotal(state, action: PayloadAction<number>){
-      state.totalPrice -= action.payload;
-    },
   },
 });
 
-export const { decremented, incremented, increaseTotal, decreaseTotal } = cartSlice.actions;
+export const { decremented, incremented } = cartSlice.actions;
 export default cartSlice.reducer;
